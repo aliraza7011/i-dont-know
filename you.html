@@ -1,0 +1,249 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A Special Question</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        :root {
+  --primary-color: #ff69b4;
+  --yes-color: #4CAF50;
+  --no-color: #f44336;
+  --bg-color: #f0f0f0;
+  --text-color: #333;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* CSS styles for the alert */
+.alert {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  z-index: 9999;
+}
+
+.alert button {
+  background-color: #007bff;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  text-decoration: underline;
+}
+
+html {
+  font-size: 16px;
+}
+
+body {
+  font-family: 'Georgia', serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* min-height: 100vh; */
+  width: 50vw;
+  background-color: var(--bg-color);
+  padding: 1rem;
+  background: url('/ice.jpg') center/cover no-repeat fixed;
+  color: var(--text-color);
+}
+
+.container {
+  width: 100%;
+  max-width: 600px;
+  text-align: center;
+  /* background: rgb(254, 254, 253); */
+  padding: 1.5rem;
+  border-radius: 10px;
+  backdrop-filter: blur(10px);
+  box-shadow: 0px 0px 6px 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+  color: var(--primary-color);
+  font-size: clamp(1.5rem, 5vw, 2.5rem);
+  margin-bottom: 1rem;
+}
+
+p {
+  font-size: clamp(1rem, 2.5vw, 1.2rem);
+  margin-bottom: 1.5rem;
+  line-height: 1.6;
+}
+
+.buttons {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-top: 2rem;
+}
+
+button {
+  font-size: clamp(0.8rem, 2.5vw, 1.2rem);
+  padding: 0.5em 1em;
+  cursor: pointer;
+  border: none;
+  border-radius: 5px;
+  border-top-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  transition: all 0.3s ease;
+  flex: 1;
+  max-width: 150px;
+}
+
+#yesBtn {
+  background-color: var(--yes-color);
+  color: white;
+}
+
+#noBtn {
+  background-color: var(--no-color);
+  color: white;
+}
+
+#yesBtn:hover,
+#noBtn:hover {
+  opacity: 0.9;
+}
+
+    </style>
+</head>
+
+<body>
+    <div id="alert" class="alert">
+        <p>Welcome to my website Tishaa..! Are you ready to explore my webiste...?</p>
+        <button id="dismiss-button">Yuppe</button>
+    </div>
+
+    <div id="content" style="display: none;">
+        <div class="container">
+            <h1>A Question of the Heart</h1>
+            <p>Your radiant presence illuminates my world, your laughter a melody to my soul. Your beauty, inside and
+                out, captivates me daily. In you, I've found joy, inspiration, and tranquility. Would you honor me with
+                your company on a date, exploring the depths of our connection?</p>
+            <div class="buttons">
+                <button id="yesBtn">Absolutely</button>
+                <button id="noBtn">Perhaps</button>
+            </div>
+        </div>
+        <script src="script.js"></script>
+</body>
+
+</html> -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A Special Question</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.1.3/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        :root {
+            --primary-color: #ff69b4;
+            --yes-color: #4CAF50;
+            --no-color: #f44336;
+            --bg-color: #f0f0f0;
+            --text-color: #333;
+        }
+
+        body {
+            font-family: 'Georgia', serif;
+            background: url('/ice.jpg') center/cover no-repeat fixed;
+            color: var(--text-color);
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .container {
+            backdrop-filter: blur(10px);
+            box-shadow: 0px 0px 6px 10px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+            font-weight: 800;
+            padding: 1.5rem;
+        }
+
+        h1 {
+            color: var(--primary-color);
+            font-size: clamp(1.5rem, 5vw, 2.5rem);
+        }
+
+        p {
+            font-size: clamp(1rem, 2.5vw, 1.2rem);
+            line-height: 1.6;
+        }
+        #question{
+            text-decoration: underline;
+        }
+
+        .btn-custom {
+            font-size: clamp(0.8rem, 2.5vw, 1.2rem);
+            border-top-left-radius: 20px;
+            border-bottom-right-radius: 20px;
+            transition: all 0.3s ease;
+            max-width: 150px;
+        }
+
+        #yesBtn {
+            background-color: var(--yes-color);
+        }
+
+        #noBtn {
+            background-color: var(--no-color);
+        }
+
+        #yesBtn:hover, #noBtn:hover {
+            opacity: 0.9;
+        }
+
+        .alert {
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            z-index: 9999;
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+        }
+    </style>
+</head>
+<body>
+    <div id="alert" class="alert p-4 rounded">
+        <p class="mb-3">Welcome to my website Tishaa..! Are you ready to explore my website...?</p>
+        <button id="dismiss-button" class="btn btn-primary">Yuppe</button>
+    </div>
+
+    <div id="content" class="container my-5" style="display: none;">
+        <div class="row justify-content-center">
+            <div class="col-12 col-md-10 col-lg-8">
+                <h1 class="text-center mb-4">A Question of the Heart</h1>
+                <p id="question" class="text-center mb-4">Your radiant presence illuminates my world, your laughter a melody to my soul. Your beauty, inside and out, captivates me daily. In you, I've found joy, inspiration, and tranquility. Would you honor me with your company on a date, exploring the depths of our connection?</p>
+                <div class="d-flex justify-content-center mt-4">
+                    <button id="yesBtn" class="btn btn-custom text-white me-2">Absolutely</button>
+                    <button id="noBtn" class="btn btn-custom text-white">Perhaps</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bootstrap JS (optional, if you need Bootstrap's JavaScript features) -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.1.3/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

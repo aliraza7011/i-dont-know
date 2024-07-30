@@ -1,0 +1,624 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>this for you....!</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+    <script src="./script.js" defer></script>
+</head>
+
+<body>
+    <form action="#">
+        <h2>I LOVE YOU❤️</h2>
+        <h3>WILL YOU BE MY GIRLFRINED...?</h3>
+        <div class="buttons">
+            <input type="submit" value="Yes" id="yes">
+            <input type="submit" value="No" id="no">
+        </div>
+    </form>
+</body>
+
+</html> -->
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+   <script src="script.js"></script>
+</head>
+<body>
+    <div class="proposal">
+        <h2>Proposal for a Girl</h2>
+        <p>Would you like to accept this proposal?</p>
+        <div class="options">
+          <button class="yes-option" id="yes-btn">Ye</button>
+          <button class="no-option" id="no-btn">No</button>
+        </div>
+      </div>
+</body>
+</html> -->
+<!-- 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A Special Question</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #f0f0f0;
+        }
+        .container {
+            text-align: center;
+            background-color: white;
+            padding: 2rem;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        h1 {
+            color: #ff69b4;
+        }
+        .buttons {
+            margin-top: 2rem;
+        }
+        button {
+            font-size: 1.2rem;
+            padding: 0.5rem 1rem;
+            margin: 0 0.5rem;
+            cursor: pointer;
+            border: none;
+            border-radius: 5px;
+            transition: all 0.3s ease;
+        }
+        #yesBtn {
+            background-color: #4CAF50;
+            color: white;
+        }
+        #noBtn {
+            background-color: #f44336;
+            color: white;
+        }
+        #yesBtn:hover, #noBtn:hover {
+            opacity: 0.8;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Will you go out with me?</h1>
+        <p>I've admired you for a while, and I'd love to take you on a date.</p>
+        <div class="buttons">
+            <button id="yesBtn">Yes</button>
+            <button id="noBtn">No</button>
+        </div>
+    </div>
+
+    <script>
+        const yesBtn = document.getElementById('yesBtn');
+        const noBtn = document.getElementById('noBtn');
+        
+        yesBtn.addEventListener('click', () => {
+            alert('Yay! I am so excited! I will contact you soon to plan our date.');
+        });
+
+        noBtn.addEventListener('mouseenter', (e) => {
+            const maxX = window.innerWidth - e.target.offsetWidth;
+            const maxY = window.innerHeight - e.target.offsetHeight;
+            
+            const randomX = Math.floor(Math.random() * maxX);
+            const randomY = Math.floor(Math.random() * maxY);
+            
+            e.target.style.position = 'absolute';
+            e.target.style.left = randomX + 'px';
+            e.target.style.top = randomY + 'px';
+        });
+
+        noBtn.addEventListener('click', () => {
+            noBtn.textContent = 'Yes';
+            noBtn.style.backgroundColor = '#4CAF50';
+            alert('Great choice! Looking forward to our date!');
+        });
+    </script>
+</body>
+</html> -->
+<!-- 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A Special Question</title>
+    <style>
+        :root {
+            --primary-color: #ff69b4;
+            --yes-color: #4CAF50;
+            --no-color: #f44336;
+        }
+        
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            background-color: #f0f0f0;
+            padding: 1rem;
+        }
+
+        .container {
+            width: 100%;
+            max-width: 600px;
+            text-align: center;
+            background-color: white;
+            padding: 2rem;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        h1 {
+            color: var(--primary-color);
+            font-size: clamp(1.5rem, 5vw, 2.5rem);
+            margin-bottom: 1rem;
+        }
+
+        p {
+            font-size: clamp(1rem, 3vw, 1.2rem);
+            margin-bottom: 2rem;
+        }
+
+        .buttons {
+            display: flex;
+            justify-content: center;
+            gap: 1rem;
+        }
+
+        button {
+            font-size: clamp(1rem, 3vw, 1.2rem);
+            padding: 0.5em 1em;
+            cursor: pointer;
+            border: none;
+            border-radius: 5px;
+            transition: all 0.3s ease;
+            flex: 1;
+            max-width: 150px;
+        }
+
+        #yesBtn {
+            background-color: var(--yes-color);
+            color: white;
+        }
+
+        #noBtn {
+            background-color: var(--no-color);
+            color: white;
+        }
+
+        #yesBtn:hover, #noBtn:hover {
+            opacity: 0.8;
+        }
+
+        @media (max-width: 480px) {
+            .container {
+                padding: 1.5rem;
+            }
+
+            .buttons {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            button {
+                width: 100%;
+                max-width: none;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Will you go out with me?</h1>
+        <p>I've admired you for a while, and I'd love to take you on a date.</p>
+        <div class="buttons">
+            <button id="yesBtn">Yes</button>
+            <button id="noBtn">No</button>
+        </div>
+    </div>
+
+    <script>
+        const yesBtn = document.getElementById('yesBtn');
+        const noBtn = document.getElementById('noBtn');
+        
+        yesBtn.addEventListener('click', () => {
+            alert('Yay! I am so excited! I will contact you soon to plan our date.');
+        });
+
+        noBtn.addEventListener('mouseover', moveButton);
+        noBtn.addEventListener('touchstart', moveButton);
+
+        function moveButton(e) {
+            const maxX = window.innerWidth - e.target.offsetWidth;
+            const maxY = window.innerHeight - e.target.offsetHeight;
+            
+            const randomX = Math.floor(Math.random() * maxX);
+            const randomY = Math.floor(Math.random() * maxY);
+            
+            e.target.style.position = 'fixed';
+            e.target.style.left = randomX + 'px';
+            e.target.style.top = randomY + 'px';
+        }
+
+        noBtn.addEventListener('click', () => {
+            noBtn.textContent = 'Yes';
+            noBtn.style.backgroundColor = 'var(--yes-color)';
+            alert('Great choice! Looking forward to our date!');
+        });
+    </script>
+</body>
+</html> -->
+<!-- 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A Special Question</title>
+    <style>
+        :root {
+            --primary-color: #ff69b4;
+            --yes-color: #4CAF50;
+            --no-color: #f44336;
+        }
+        
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            background-color: #f0f0f0;
+            padding: 1rem;
+        }
+
+        .container {
+            width: 100%;
+            max-width: 600px;
+            text-align: center;
+            background-color: white;
+            padding: 2rem;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        h1 {
+            color: var(--primary-color);
+            font-size: clamp(1.5rem, 5vw, 2.5rem);
+            margin-bottom: 1rem;
+        }
+
+        p {
+            font-size: clamp(1rem, 3vw, 1.2rem);
+            margin-bottom: 2rem;
+        }
+
+        .buttons {
+            display: flex;
+            justify-content: center;
+            gap: 1rem;
+        }
+
+        button {
+            font-size: clamp(1rem, 3vw, 1.2rem);
+            padding: 0.5em 1em;
+            cursor: pointer;
+            border: none;
+            border-radius: 5px;
+            transition: all 0.3s ease;
+            flex: 1;
+            max-width: 150px;
+        }
+
+        #yesBtn {
+            background-color: var(--yes-color);
+            color: white;
+        }
+
+        #noBtn {
+            background-color: var(--no-color);
+            color: white;
+        }
+
+        #yesBtn:hover, #noBtn:hover {
+            opacity: 0.8;
+        }
+
+        @media (max-width: 480px) {
+            .container {
+                padding: 1.5rem;
+            }
+
+            .buttons {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            button {
+                width: 100%;
+                max-width: none;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Will you go out with me?</h1>
+        <p>I've admired you for a while, and I'd love to take you on a date.</p>
+        <div class="buttons">
+            <button id="yesBtn">Yes</button>
+            <button id="noBtn">No</button>
+        </div>
+    </div>
+
+    <script>
+        const yesBtn = document.getElementById('yesBtn');
+        const noBtn = document.getElementById('noBtn');
+        
+        yesBtn.addEventListener('click', () => {
+            alert('Yay! Im so excited! I contact you soon to plan our date.');
+        });
+
+        function changeToYes(e) {
+            e.preventDefault(); // Prevent default hover behavior on touch devices
+            noBtn.textContent = 'Yes';
+            noBtn.style.backgroundColor = 'var(--yes-color)';
+        }
+
+        noBtn.addEventListener('mouseover', changeToYes);
+        noBtn.addEventListener('touchstart', changeToYes);
+        noBtn.addEventListener('click', (e) => {
+            changeToYes(e);
+            alert('Great choice! Looking forward to our date!');
+        });
+    </script>
+</body>
+</html> -->
+
+<!-- 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A Heartfelt Question</title>
+    <style>
+        :root {
+            --primary-color: #ff69b4;
+            --yes-color: #4CAF50;
+            --no-color: #f44336;
+            --bg-color: #f0f0f0;
+            --text-color: #333;
+        }
+        
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: 'Georgia', serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            background-color: var(--bg-color);
+            padding: 1rem;
+            color: var(--text-color);
+        }
+
+        .container {
+            width: 100%;
+            max-width: 800px;
+            text-align: center;
+            background-color: white;
+            padding: 2rem;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        h1 {
+            color: var(--primary-color);
+            font-size: clamp(1.5rem, 5vw, 2.5rem);
+            margin-bottom: 1rem;
+        }
+
+        p {
+            font-size: clamp(1rem, 3vw, 1.2rem);
+            margin-bottom: 1.5rem;
+            line-height: 1.6;
+        }
+
+        .buttons {
+            display: flex;
+            justify-content: center;
+            gap: 1rem;
+            margin-top: 2rem;
+        }
+
+        button {
+            font-size: clamp(1rem, 3vw, 1.2rem);
+            padding: 0.5em 1em;
+            cursor: pointer;
+            border: none;
+            border-radius: 5px;
+            transition: all 0.3s ease;
+            flex: 1;
+            max-width: 150px;
+        }
+
+        #yesBtn {
+            background-color: var(--yes-color);
+            color: white;
+        }
+
+        #noBtn {
+            background-color: var(--no-color);
+            color: white;
+        }
+
+        #yesBtn:hover, #noBtn:hover {
+            opacity: 0.8;
+        }
+
+        @media (max-width: 480px) {
+            .container {
+                padding: 1.5rem;
+            }
+
+            .buttons {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            button {
+                width: 100%;
+                max-width: none;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>A Question of the Heart</h1>
+        <p>In the tapestry of my existence, your presence has woven threads of ineffable joy and transcendent beauty. Your resplendent spirit illuminates the darkest corners of my world, and your smile, a beacon of hope, guides me through life's tempestuous seas.</p>
+        <p>Your inner radiance outshines the most luminous celestial bodies, and your kindness nurtures the very essence of my being. In your company, I find a sanctuary of tranquility and a wellspring of inspiration.</p>
+        <p>With every passing moment, my admiration for you deepens, like roots seeking sustenance in fertile soil. Your laughter is a melody that resonates with the very core of my soul, and your wisdom is a light that dispels the shadows of uncertainty.</p>
+        <p>In this grand odyssey of life, I yearn to walk beside you, hand in hand, heart in heart. Would you grace me with the ineffable honor of your company on a romantic sojourn, where we might explore the boundless landscapes of our shared affection?</p>
+        <div class="buttons">
+            <button id="yesBtn">Absolutely</button>
+            <button id="noBtn">Perhaps</button>
+        </div>
+    </div>
+
+    <script>
+        const yesBtn = document.getElementById('yesBtn');
+        const noBtn = document.getElementById('noBtn');
+        
+        yesBtn.addEventListener('click', () => {
+            alert('My heart soars with joy! I eagerly anticipate our romantic rendezvous.');
+        });
+
+        function changeToYes(e) {
+            e.preventDefault();
+            noBtn.textContent = 'Absolutely';
+            noBtn.style.backgroundColor = 'var(--yes-color)';
+        }
+
+        noBtn.addEventListener('mouseover', changeToYes);
+        noBtn.addEventListener('touchstart', changeToYes);
+        noBtn.addEventListener('click', (e) => {
+            changeToYes(e);
+            alert('Your acceptance fills me with boundless elation! I look forward to our shared journey.');
+        });
+    </script>
+</body>
+</html> -->
+
+<!DOCTYPE html>
+<html>
+<head>
+  <title>My Website</title>
+  <style>
+    /* CSS styles for the alert */
+    .alert {
+      position: fixed;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      background-color: #fff;
+      padding: 20px;
+      border-radius: 5px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+      z-index: 9999;
+    }
+
+    .alert button {
+      background-color: #007bff;
+      color: #fff;
+      padding: 10px 20px;
+      border: none;
+      cursor: pointer;
+      border-radius: 5px;
+    }
+  </style>
+</head>
+<body>
+  <div id="alert" class="alert">
+    <p>Welcome to our website! Please read the terms and conditions before proceeding.</p>
+    <button id="dismiss-button">Dismiss</button>
+  </div>
+
+  <div id="content" style="display: none;">
+    <!-- Your HTML content here -->
+    <h1>Welcome to My Website</h1>
+    <p>This is the main content of the page.</p>
+  </div>
+
+  <script>
+    // JavaScript code
+    window.addEventListener('load', function() {
+      // Display the alert
+      const alert = document.getElementById('alert');
+      alert.style.display = 'block';
+
+      // Add event listener to the dismiss button
+      const dismissButton = document.getElementById('dismiss-button');
+      dismissButton.addEventListener('click', function() {
+        // Hide the alert
+        alert.style.display = 'none';
+
+        // Show the content
+        const content = document.getElementById('content');
+        content.style.display = 'block';
+
+        // Prevent the page from scrolling
+        document.body.style.overflow = 'hidden';
+        document.documentElement.style.overflow = 'hidden';
+
+        // Restore scrolling after a short delay
+        setTimeout(function() {
+          document.body.style.overflow = '';
+          document.documentElement.style.overflow = '';
+        }, 500); // Adjust the delay as needed
+      });
+    });
+  </script>
+</body>
+</html>
